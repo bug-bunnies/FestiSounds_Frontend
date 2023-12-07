@@ -7,7 +7,7 @@ import FeatureCard from "./FeatureCard";
 
 const Features = () => {
   return (
-    <div className="grid p-3 grid-cols-2 gap-4 bg-spotify-green items-center justify-center">
+    <div className="grid p-3 grid-cols-2 gap-[1.5rem] bg-gradient-to-b from-spotify-black via-spotify-green to-spotify-black items-center justify-center">
   <div className="grid gap-4 align-middle justify-self-end">
     <FeatureCard
       imgUrl={featuresArtistsImg}
