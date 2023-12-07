@@ -2,7 +2,7 @@ import { FeatureCardType } from "../types/FestivalCardType";
 
 const FeatureCard = ({ imgUrl, title, description }: FeatureCardType) => {
   return (
-    <div className="max-w-sm rounded-lg border border-spotify-dark-grey bg-spotify-dark-grey shadow h-fit ">
+    <div className="max-w-sm rounded-lg border-2 border-spotify-black bg-spotify-dark-grey shadow h-fit ">
       <a href="#">
         <img className="rounded-t-lg" src={imgUrl} alt="" />
       </a>
