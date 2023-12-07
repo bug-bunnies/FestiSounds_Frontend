@@ -2,7 +2,7 @@ import { heroBackgroundImg } from "../../public/assets/hero";
 
 const Hero = () => {
   return (
-    <section className="bg-spotify-grey bg-center bg-no-repeat bg-blend-multiply" style={{ backgroundImage: `url(${heroBackgroundImg})` }}>
+    <section className="bg-spotify-black bg-opacity-50 bg-center bg-no-repeat bg-blend-multiply" style={{ backgroundImage: `url(${heroBackgroundImg})` }}>
       <div className="mx-auto max-w-screen-xl px-4 py-24 text-center lg:py-56">
         <h1 className="mb-4 px-1 text-4xl font-extrabold leading-none tracking-tight text-spotify-white md:text-5xl lg:text-6xl">
         Discover your <span className="text-spotify-green">favourite <br/> festival</span> sounds
