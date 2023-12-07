@@ -2,7 +2,6 @@ import CallToAction from "../components/CallToAction";
 import Features from "../components/Features";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
-import Navbar from "../components/Navbar";
 
 const LandingPage = () => {
 
@@ -16,10 +15,7 @@ const LandingPage = () => {
 
     return (
         <main className="relative bg-hero-black">
-            <section>
-                <Navbar />
-            </section>
-
+            
             <section>
                 <Hero />
             </section>
