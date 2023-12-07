@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { festisoundsLogo } from "../../public/assets/logo";
 
 const Navbar = () => {
 
@@ -13,7 +14,7 @@ const Navbar = () => {
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <img
-              src="src/assets/festisounds-logo.png"
+              src={festisoundsLogo}
               className="h-8"
               alt="FestiSounds Logo"
             />
@@ -59,19 +60,19 @@ const Navbar = () => {
                 <a
                   className="block rounded px-3 py-2 text-spotify-white hover:bg-spotify-light-grey md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-spotify-green"
                 >
-                  <Link to="/about">About</Link>
+                  <Link to="#">About</Link>
                 </a>
               </li>
               <li>
                 <a
                   className="block rounded px-3 py-2 text-spotify-white hover:bg-spotify-light-grey md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-spotify-green"
                 >
-                  <Link to="/features">Features</Link>
+                  <Link to="#">Features</Link>
                 </a>
               </li>
               <li>
                 <a
-                  href="https://github.com/salt-404-name-not-found"
+                  href="#"
                   className="block rounded px-3 py-2 text-spotify-white hover:bg-spotify-light-grey md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-spotify-green"
                 >
                   Github

@@ -1,14 +1,20 @@
+import { festisoundsLogo } from "../../public/assets/logo";
+
+
 const Footer = () => {
+
+  const festisoundsLink: string = "https://festisounds.vercel.app";
+
   return (
     <footer className="bg-spotify-black shadow">
       <div className="mx-auto w-full max-w-screen-xl p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
           <a
-            href="https://festisounds.vercel.app"
+            href={festisoundsLink}
             className="mb-4 flex items-center space-x-3 rtl:space-x-reverse sm:mb-0"
           >
             <img
-              src="src/assets/festisounds-logo.png"
+              src={festisoundsLogo}
               className="h-8"
               alt="Flowbite Logo"
             />
@@ -42,7 +48,7 @@ const Footer = () => {
         <hr className="my-6 border-spotify-light-grey sm:mx-auto lg:my-8" />
         <span className="block text-sm text-spotify-grey sm:text-center">
           © 2023{" "}
-          <a href="https://festisounds.vercel.app" className="hover:underline">
+          <a href={festisoundsLink} className="hover:underline">
             FestiSounds™
           </a>
           . All Rights Reserved.
