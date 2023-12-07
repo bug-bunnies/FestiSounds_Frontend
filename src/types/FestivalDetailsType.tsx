@@ -1,4 +1,4 @@
-import {SpotifyArtistDetails} from "./SpotifyArtistDetails.tsx";
+import {SpotifyArtistDetails} from "./SpotifyArtistDetailsType.tsx";
 
 export type FestivalDetails = {
     name: string,
