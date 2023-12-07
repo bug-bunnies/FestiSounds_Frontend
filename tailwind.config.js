@@ -14,6 +14,7 @@ export default {
         "spotify-grey": "#535353",
         "spotify-light-grey": "#b3b3b3",
         "spotify-white": "#FFFFFF",
+        "hero-black": "#010101"
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
