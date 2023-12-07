@@ -60,7 +60,7 @@ const Navbar = () => {
                 <a
                   className="block rounded px-3 py-2 text-spotify-white hover:bg-spotify-light-grey md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-spotify-green"
                 >
-                  <Link to="#">About</Link>
+                  <Link to="/about">About</Link>
                 </a>
               </li>
               <li>
