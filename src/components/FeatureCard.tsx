@@ -15,7 +15,7 @@ const FeatureCard = ({ imgUrl, title, description }: FeatureCardType) => {
         <p className="mb-3 font-normal text-spotify-light-grey ">
           {description}
         </p>
-        <a
+        {/* <a
           href="#"
           className="inline-flex items-center rounded-lg bg-spotify-green px-3 py-2 text-center text-sm font-medium text-spotify-dark-grey hover:text-spotify-green hover:ring-1 hover:ring-spotify-green hover:bg-transparent focus:ring-4 focus:ring-spotify-green"
         >
@@ -35,7 +35,7 @@ const FeatureCard = ({ imgUrl, title, description }: FeatureCardType) => {
               d="M1 5h12m0 0L9 1m4 4L9 9"
             />
           </svg>
-        </a>
+        </a> */}
       </div>
     </div>
   );
