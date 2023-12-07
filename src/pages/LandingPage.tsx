@@ -1,6 +1,5 @@
 import CallToAction from "../components/CallToAction";
 import Features from "../components/Features";
-import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 
 const LandingPage = () => {
@@ -26,10 +25,6 @@ const LandingPage = () => {
 
             <section>
                 <CallToAction />
-            </section>
-
-            <section>
-                <Footer />
             </section>
         </main>
     );
