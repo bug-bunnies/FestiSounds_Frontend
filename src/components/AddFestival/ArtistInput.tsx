@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {SpotifyArtistDetails} from "../../types/SpotifyArtistDetails.tsx";
+import {SpotifyArtistDetails} from "../../types/SpotifyArtistDetailsType.tsx";
 import {FieldValues, UseFormRegister} from "react-hook-form";
 
 

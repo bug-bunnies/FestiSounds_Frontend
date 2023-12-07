@@ -5,7 +5,7 @@ import {FestivalForm} from "../components/AddFestival/FestivalForm.tsx";
 import {DateSelector} from "../components/AddFestival/DateSelector.tsx";
 // import {PhotoUploader} from "../Components/AddFestival/PhotoUploader.tsx";
 import {ArtistInput} from "../components/AddFestival/ArtistInput.tsx";
-import {SpotifyArtistDetails} from "../types/SpotifyArtistDetails.tsx";
+import {SpotifyArtistDetails} from "../types/SpotifyArtistDetailsType.tsx";
 import {useForm} from "react-hook-form";
 
 // const testData = {
