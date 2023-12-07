@@ -16,9 +16,9 @@ const LandingPage = () => {
 
     return (
         <main className="relative">
-            {/* <section>
+            <section>
                 <Navbar />
-            </section> */}
+            </section>
 
             <section>
                 <Hero />
