@@ -1,4 +1,4 @@
-import {featuresArtistsImg, featuresFestivalImg, featuresPlaylistImg} from "../assets/features"
+import {featuresArtistsImg, featuresFestivalImg, featuresPlaylistImg} from "../../public/assets/features"
 
 export const Features = [
     {
