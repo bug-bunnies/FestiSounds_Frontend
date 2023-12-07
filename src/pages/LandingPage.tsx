@@ -15,7 +15,7 @@ const LandingPage = () => {
     //     }
 
     return (
-        <main className="relative bg-spotify-black">
+        <main className="relative bg-hero-black">
             <section>
                 <Navbar />
             </section>
