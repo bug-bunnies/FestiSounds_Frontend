@@ -18,6 +18,9 @@ const Navbar = () => {
               className="h-8"
               alt="FestiSounds Logo"
             />
+            <span className="self-center whitespace-nowrap text-2xl font-semibold text-spotify-white">
+              FestiSounds
+            </span>
           </a>
           <button
             id="hamburger-menu"
