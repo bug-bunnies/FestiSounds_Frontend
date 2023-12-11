@@ -1,3 +1,3 @@
-import festisoundsLogo from "./festisounds-logo.png"
+import festisoundsLogo from "./festisounds-logo-green.png"
 
 export {festisoundsLogo}

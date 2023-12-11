@@ -18,9 +18,6 @@ const Footer = () => {
               className="h-8"
               alt="Flowbite Logo"
             />
-            <span className="self-center whitespace-nowrap text-2xl font-semibold text-spotify-white">
-              FestiSounds
-            </span>
           </a>
           <ul className="mb-6 flex flex-wrap items-center text-sm font-medium text-spotify-grey sm:mb-0">
             <li>
