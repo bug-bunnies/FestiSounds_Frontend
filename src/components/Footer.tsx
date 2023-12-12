@@ -32,7 +32,7 @@ const Footer = (props: FooterType) => {
               </Link>
             </li>
             <li>
-              <Link className="me-4 hover:underline md:me-6" to="/" onClick={props.onOpenPrivacyModal}>
+              <Link className="me-4 hover:underline md:me-6" to="/">
                 Contact
               </Link>
             </li>
