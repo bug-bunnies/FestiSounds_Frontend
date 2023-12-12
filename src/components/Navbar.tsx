@@ -48,7 +48,7 @@ const Navbar = () => {
               />
             </svg>
           </button>
-          <div className={`${isNavOpen ? 'block' : 'hidden'} w-full md:block md:w-auto`}  id="navbar-default">
+          <div className={`${isNavOpen ? 'block' : 'hidden'} text-right w-full md:block md:w-auto`}  id="navbar-default">
             <ul className="mt-4 flex flex-col rounded-lg border border-spotify-grey bg-spotify-grey p-4 font-medium rtl:space-x-revers3 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-spotify-black md:p-0">
               <li>
                 <a
