@@ -5,20 +5,25 @@ const AboutPage = () => {
   return (
     <div>
       <div className="bg-spotify-black p-3">
-      <img src={festisoundsLogo} alt="FestiSounds Logo" />
+        <img
+          className="h-auto max-w-xs mx-auto"
+          src={festisoundsLogo}
+          alt="FestiSounds Logo"
+        />
         <h1 className="p-5 text-center text-3xl font-extrabold leading-none tracking-tight text-spotify-white md:text-5xl lg:text-6xl">
           We want to enhance your festival experience and help upcoming artists.
         </h1>
+        
         <div className="mb-6 px-5 text-lg font-normal text-spotify-light-grey sm:px-16 lg:text-xl xl:px-48">
+        <hr className="my-8 h-px bg-spotify-grey"></hr>
+          
           <p>Thats it...</p>
-          <hr className="my-8 h-px bg-spotify-grey"></hr>
           <br />
           <p>
             <span className="text-spotify-green"> FestiSounds</span> is more
             than just an app. It's a bridge that connects you to the world of
             undiscovered music, one festival at a time.
           </p>
-          <hr className="my-8 h-px bg-spotify-grey"></hr>
           <br />
           <p className="divide-y divide-current">
             We believe that every artist, no matter how small or unheard,
@@ -27,7 +32,7 @@ const AboutPage = () => {
             chance to experience the thrill of discovering your new favorite
             artist.
           </p>
-          <hr className="my-8 h-px bg-spotify-grey"></hr> <br />
+          <br />
           <p>
             That's why we created
             <span className="text-spotify-green"> FestiSounds</span>. Our
@@ -38,7 +43,6 @@ const AboutPage = () => {
             <span className="text-spotify-green"> FestiSounds</span> is here to
             help you connect with artists that move and inspire you.
           </p>
-          <hr className="my-8 h-px bg-spotify-grey"></hr>
           <br />
           <p>
             But
@@ -49,39 +53,18 @@ const AboutPage = () => {
             just finding new music; you're helping lesser-known artists connect
             with audiences they might not have reached otherwise.
           </p>
-          <hr className="my-8 h-px bg-spotify-grey"></hr>
           <br />
           <p>
             <span className="text-spotify-green"> FestiSounds</span> is your
             ticket to a world of music waiting to be explored. Let's set out on
             this journey together, one festival at a time.
           </p>
+          <hr className="my-8 h-px bg-spotify-grey"></hr>
         </div>
         <h2 className="p-5 text-center text-2xl font-extrabold leading-none tracking-tight text-spotify-white">
           Please note that this app is still under construction and will be
           updated regularly. Check our github for detailed updates!
         </h2>
-        {/* <a
-        href="#"
-        className="inline-flex items-center justify-center rounded-lg bg-blue-700 px-5 py-3 text-center text-base font-medium text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
-      >
-        Learn more
-        <svg
-          className="ms-2 h-3.5 w-3.5 rtl:rotate-180"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 14 10"
-        >
-          <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M1 5h12m0 0L9 1m4 4L9 9"
-          />
-        </svg>
-      </a> */}
       </div>
       <CallToAction />
     </div>
