@@ -53,7 +53,7 @@ const Navbar = () => {
               <li>
                 <a
                   href="/"
-                  className="block rounded bg-spotify-green px-3 py-2 text-white md:bg-transparent md:p-0 md:text-spotify-green"
+                  className="block rounded px-3 py-2 text-spotify-white hover:bg-spotify-light-grey md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-spotify-green"
                   aria-current="page"
                 >
                   <Link to="/">Home</Link>
@@ -76,9 +76,9 @@ const Navbar = () => {
               <li>
                 <a
                   href="#"
-                  className="block rounded px-3 py-2 text-spotify-white hover:bg-spotify-light-grey md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-spotify-green"
+                  className="block rounded px-3 py-2 text-spotify-green hover:bg-spotify-light-grey md:border-0 md:p-0 md:hover:bg-transparent md:hover:border-spotify-green md:hover:underline"
                 >
-                  Github
+                  Connect with Spotify
                 </a>
               </li>
             </ul>
