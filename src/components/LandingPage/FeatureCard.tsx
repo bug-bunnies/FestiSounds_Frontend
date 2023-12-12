@@ -1,4 +1,4 @@
-import { FeatureCardType } from "../types/FestivalCardType";
+import { FeatureCardType } from "../../types/FestivalCardType";
 
 const FeatureCard = ({ imgUrl, title, description }: FeatureCardType) => {
   return (

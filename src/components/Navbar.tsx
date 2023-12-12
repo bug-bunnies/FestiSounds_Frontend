@@ -48,12 +48,12 @@ const Navbar = () => {
               />
             </svg>
           </button>
-          <div className={`${isNavOpen ? 'block' : 'hidden'} w-full md:block md:w-auto`}  id="navbar-default">
+          <div className={`${isNavOpen ? 'block' : 'hidden'} text-right w-full md:block md:w-auto`}  id="navbar-default">
             <ul className="mt-4 flex flex-col rounded-lg border border-spotify-grey bg-spotify-grey p-4 font-medium rtl:space-x-revers3 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-spotify-black md:p-0">
               <li>
                 <a
                   href="/"
-                  className="block rounded bg-spotify-green px-3 py-2 text-white md:bg-transparent md:p-0 md:text-spotify-green"
+                  className="block rounded px-3 py-2 text-spotify-white hover:bg-spotify-light-grey md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-spotify-green"
                   aria-current="page"
                 >
                   <Link to="/">Home</Link>
@@ -76,9 +76,9 @@ const Navbar = () => {
               <li>
                 <a
                   href="#"
-                  className="block rounded px-3 py-2 text-spotify-white hover:bg-spotify-light-grey md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-spotify-green"
+                  className="block rounded px-3 py-2 text-spotify-green hover:bg-spotify-light-grey md:border-0 md:p-0 md:hover:bg-transparent md:hover:border-spotify-green md:hover:underline"
                 >
-                  Github
+                  Connect with Spotify
                 </a>
               </li>
             </ul>

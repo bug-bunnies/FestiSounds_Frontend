@@ -2,7 +2,7 @@ import {
   featuresArtistsImg,
   featuresFestivalImg,
   featuresPlaylistImg,
-} from "../../public/assets/features";
+} from "../../../public/assets/features";
 import FeatureCard from "./FeatureCard";
 
 const Features = () => {
