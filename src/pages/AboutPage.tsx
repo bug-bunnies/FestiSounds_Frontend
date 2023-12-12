@@ -1,5 +1,5 @@
 import { festisoundsLogo } from "../../public/assets/logo";
-import CallToAction from "../components/CallToAction";
+import CallToAction from "../components/LandingPage/CallToAction";
 
 const AboutPage = () => {
   return (

@@ -1,10 +1,10 @@
 import {DateValueType} from "react-tailwindcss-datepicker";
 import React, {useEffect, useRef, useState} from "react";
 import axios from "axios";
-import {FestivalForm} from "../components/AddFestival/FestivalForm.tsx";
-import {DateSelector} from "../components/AddFestival/DateSelector.tsx";
+import {FestivalForm} from "../components/AddFestivalPage/FestivalForm.tsx";
+import {DateSelector} from "../components/AddFestivalPage/DateSelector.tsx";
 // import {PhotoUploader} from "../Components/AddFestival/PhotoUploader.tsx";
-import {ArtistInput} from "../components/AddFestival/ArtistInput.tsx";
+import {ArtistInput} from "../components/AddFestivalPage/ArtistInput.tsx";
 import {SpotifyArtistDetails} from "../types/SpotifyArtistDetailsType.tsx";
 import {useForm} from "react-hook-form";
 

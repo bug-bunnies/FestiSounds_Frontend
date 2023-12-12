@@ -1,4 +1,4 @@
-import { heroBackgroundImg } from "../../public/assets/hero";
+import { heroBackgroundImg } from "../../../public/assets/hero";
 
 const Hero = () => {
   return (

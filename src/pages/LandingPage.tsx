@@ -1,6 +1,6 @@
-import CallToAction from "../components/CallToAction";
-import Features from "../components/Features";
-import Hero from "../components/Hero";
+import CallToAction from "../components/LandingPage/CallToAction";
+import Features from "../components/LandingPage/Features";
+import Hero from "../components/LandingPage/Hero";
 
 const LandingPage = () => {
 
