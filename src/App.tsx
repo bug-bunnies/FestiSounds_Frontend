@@ -4,8 +4,16 @@ import Navbar from "./components/Navbar.tsx";
 import LandingPage from "./pages/LandingPage.tsx";
 import AboutPage from "./pages/AboutPage.tsx";
 import Footer from "./components/Footer.tsx";
+import { useState } from "react";
+import PrivacyPolicyModal from "./modals/PrivacyPolicyModal.tsx";
 
 function App() {
+
+  const [isPrivacyPolicyOpen, setPrivacyPolicyOpen] = useState(false);
+  const togglePrivacyPolicy = () => {
+    setPrivacyPolicyOpen(!isPrivacyPolicyOpen)
+  }
+
   return (
     <div>
       <Navbar />
@@ -16,7 +24,8 @@ function App() {
         <Route path="about" element={<AboutPage />} />
         <Route index path="/" element={<LandingPage />} />
       </Routes>
-      <Footer />
+      <PrivacyPolicyModal isOpen={isPrivacyPolicyOpen} onClose={togglePrivacyPolicy}/>
+      <Footer onOpenPrivacyModal={togglePrivacyPolicy} />
     </div>
   );
 }

@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { festisoundsLogo } from "../../public/assets/logo";
+import { FooterType } from "../types/FooterType";
 
-const Footer = () => {
+const Footer = (props: FooterType) => {
   const festisoundsLink: string = "https://festisounds.vercel.app";
 
   return (
@@ -21,7 +22,7 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link className="me-4 hover:underline md:me-6" to="/">
+              <Link className="me-4 hover:underline md:me-6" to="/" onClick={props.onOpenPrivacyModal}>
                 Privacy Policy
               </Link>
             </li>
@@ -31,7 +32,7 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link className="me-4 hover:underline md:me-6" to="/">
+              <Link className="me-4 hover:underline md:me-6" to="/" onClick={props.onOpenPrivacyModal}>
                 Contact
               </Link>
             </li>
