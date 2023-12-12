@@ -1,8 +1,7 @@
+import { Link } from "react-router-dom";
 import { festisoundsLogo } from "../../public/assets/logo";
 
-
 const Footer = () => {
-
   const festisoundsLink: string = "https://festisounds.vercel.app";
 
   return (
@@ -13,32 +12,28 @@ const Footer = () => {
             href={festisoundsLink}
             className="mb-4 flex items-center space-x-3 rtl:space-x-reverse sm:mb-0"
           >
-            <img
-              src={festisoundsLogo}
-              className="h-8"
-              alt="Flowbite Logo"
-            />
+            <img src={festisoundsLogo} className="h-8" alt="Flowbite Logo" />
           </a>
           <ul className="mb-6 flex flex-wrap items-center text-sm font-medium text-spotify-grey sm:mb-0">
             <li>
-              <a href="#" className="me-4 hover:underline md:me-6">
+              <Link className="me-4 hover:underline md:me-6" to="/about">
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="me-4 hover:underline md:me-6">
+              <Link className="me-4 hover:underline md:me-6" to="/">
                 Privacy Policy
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="me-4 hover:underline md:me-6">
-                Licensing
-              </a>
+              <Link className="me-4 hover:underline md:me-6" to="https://github.com/bug-bunnies" target="_blank">
+                Github
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <Link className="me-4 hover:underline md:me-6" to="/">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
