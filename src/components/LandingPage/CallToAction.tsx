@@ -1,8 +1,19 @@
 const CallToAction = () => {
+
+  const getSpotifyUserLogin = () => {
+    alert("This feature is currently disabled.")
+    // fetch("http://localhost:8080/api/login")
+    //   .then((response) => response.text())
+    //   .then((response) => {
+    //     window.location.replace(response);
+    //   });
+    }
+
     return (
-        <div className="relative flex justify-center p-6 bg bg-spotify-black">
+        <div className="relative flex justify-center p-6 bg bg-transparent">
             <a
             href="#"
+            onClick={getSpotifyUserLogin}
             className="inline-flex items-center justify-center rounded-full bg-spotify-green px-5 py-3 text-center text-base font-medium text-spotify-white hover:text-spotify-green hover:ring-1 hover:ring-spotify-green hover:bg-transparent focus:ring-4 focus:ring-spotify-green"
           >
             Connect with Spotify
