@@ -3,8 +3,8 @@ import CallToAction from "../components/LandingPage/CallToAction";
 
 const AboutPage = () => {
   return (
-    <div>
-      <div className="flex justify-center bg-spotify-black">
+    <div className="bg-spotify-black">
+      <div className="flex justify-center">
         <div className="max-w-screen-2xl p-3 ">
           <img
             className="mx-auto h-auto max-w-xs"
@@ -69,7 +69,7 @@ const AboutPage = () => {
             updated regularly. Check our github for detailed updates!
           </h2>
         </div>
-      </div>
+      </div >
       <CallToAction />
     </div>
   );
