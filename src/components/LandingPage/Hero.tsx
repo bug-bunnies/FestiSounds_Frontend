@@ -1,6 +1,15 @@
 import { heroBackgroundImg } from "../../../public/assets/hero";
 
 const Hero = () => {
+
+  const getSpotifyUserLogin = () => {
+    fetch("http://localhost:8080/api/login")
+      .then((response) => response.text())
+      .then((response) => {
+        window.location.replace(response);
+      });
+    }
+
   return (
     <section className="relative bg-hero-black bg-opacity-50 bg-center bg-no-repeat bg-blend-multiply before:absolute before:inset-0 before:bg-gradient-to-t to-10% from-spotify-black" style={{ backgroundImage: `url(${heroBackgroundImg})` }}>
       <div className="mx-auto max-w-screen-xl px-4 py-24 text-center lg:py-56">
@@ -12,7 +21,7 @@ const Hero = () => {
         </p>
         <div className="relative flex justify-center">
             <a
-            href="#"
+            href="#" onClick={getSpotifyUserLogin}
             className="inline-flex items-center justify-center rounded-full bg-spotify-green px-5 py-3 text-center text-base font-medium text-spotify-white hover:text-spotify-green hover:ring-1 hover:ring-spotify-green hover:bg-transparent focus:ring-4 focus:ring-spotify-green"
           >
             Connect with Spotify
