@@ -1,6 +1,6 @@
-import { PrivacyPolicyModalType } from "../types/PrivacyPolicyModalType";
+import { ModalType } from "../types/ModalType";
 
-const PrivacyPolicyModal = (props: PrivacyPolicyModalType) => {
+const PrivacyPolicyModal = (props: ModalType) => {
   return (
     <div
       id="extralarge-modal"
