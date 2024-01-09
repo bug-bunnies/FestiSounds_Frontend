@@ -1,8 +1,34 @@
+import { useState } from "react";
 import { ModalType } from "../types/ModalType";
+import axios from "axios";
 
 const ContactModal = (props: ModalType) => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    details: "",
+  });
 
-  
+  const backendUrl: string = "http://localhost:8080";
+  const backendEndPoint: string = `${backendUrl}/api/contact/send-email`;
+
+  const handleChange = (e: any) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+    try {
+      console.log(formData);
+      const response = await axios.post(backendEndPoint, formData);
+      console.log(response.data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return (
     <div
       id="extralarge-modal"
@@ -46,7 +72,7 @@ const ContactModal = (props: ModalType) => {
           <div className="overflow-x-hidden">
             {/* Modal body */}
             <div className="p-4 md:p-5">
-              <form className="space-y-4 " action="#">
+              <form className="space-y-4 " onSubmit={handleSubmit}>
                 <div>
                   <label
                     htmlFor="name"
@@ -58,6 +84,7 @@ const ContactModal = (props: ModalType) => {
                     type="text"
                     name="name"
                     id="name"
+                    onChange={handleChange}
                     className="block w-full rounded-lg border border-spotify-light-grey bg-gray-50 p-2.5 text-sm text-spotify-dark-grey focus:border-spotify-green focus:ring-blue-500"
                     required
                   />
@@ -73,6 +100,7 @@ const ContactModal = (props: ModalType) => {
                     type="email"
                     name="email"
                     id="email"
+                    onChange={handleChange}
                     className="block w-full rounded-lg border border-spotify-light-grey bg-gray-50 p-2.5 text-sm text-spotify-dark-grey focus:border-spotify-green focus:ring-spotify-green"
                     required
                   />
@@ -88,6 +116,7 @@ const ContactModal = (props: ModalType) => {
                     type="tel"
                     name="phone"
                     id="phone"
+                    onChange={handleChange}
                     className="block w-full rounded-lg border border-spotify-light-grey bg-gray-50 p-2.5 text-sm text-spotify-dark-grey focus:border-spotify-green focus:ring-blue-500"
                   />
                 </div>
@@ -103,6 +132,7 @@ const ContactModal = (props: ModalType) => {
                     name="subject"
                     id="subject"
                     className="block w-full rounded-lg border border-spotify-light-grey bg-gray-50 p-2.5 text-sm text-spotify-dark-grey focus:border-spotify-green focus:ring-spotify-green"
+                    onChange={handleChange}
                     required
                   />
                 </div>
@@ -116,25 +146,23 @@ const ContactModal = (props: ModalType) => {
                   <textarea
                     name="details"
                     id="details"
+                    onChange={handleChange}
                     rows={12}
                     className="block w-full rounded-lg border border-spotify-light-grey bg-gray-50 p-2.5 text-sm text-spotify-dark-grey focus:border-spotify-green focus:ring-spotify-green"
                     required
                   ></textarea>
                 </div>
-                
+
+                <button
+                  data-modal-hide="extralarge-modal"
+                  type="submit"
+                  className="inline-flex items-center justify-center rounded-full bg-spotify-green px-5 py-3 text-center text-base font-medium text-spotify-white hover:bg-transparent hover:text-spotify-green hover:ring-1 hover:ring-spotify-green focus:ring-4 focus:ring-spotify-green"
+                  onClick={props.onClose}
+                >
+                  Submit
+                </button>
               </form>
             </div>
-          </div>
-          {/* Modal footer */}
-          <div className="flex items-center space-x-3 rounded-b border-t border-gray-200 p-4 rtl:space-x-reverse md:p-5">
-            <button
-              data-modal-hide="extralarge-modal"
-              type="submit"
-              className="inline-flex items-center justify-center rounded-full bg-spotify-green px-5 py-3 text-center text-base font-medium text-spotify-white hover:bg-transparent hover:text-spotify-green hover:ring-1 hover:ring-spotify-green focus:ring-4 focus:ring-spotify-green"
-              onClick={props.onClose}
-            >
-              Submit
-            </button>
           </div>
         </div>
       </div>
