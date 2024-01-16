@@ -1,12 +1,13 @@
 const CallToAction = () => {
 
   const getSpotifyUserLogin = () => {
-    alert("This feature is currently disabled.")
-    // fetch("http://localhost:8080/api/login")
-    //   .then((response) => response.text())
-    //   .then((response) => {
-    //     window.location.replace(response);
-    //   });
+    // alert("This feature is currently disabled.")
+    fetch("http://localhost:8080/api/login")
+      .then((response) => response.text())
+      // .then((response) => console.log(response))
+      .then((response) => {
+        window.location.replace(response);
+      });
     }
 
     return (
