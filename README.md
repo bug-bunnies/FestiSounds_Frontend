@@ -1,4 +1,3 @@
-# FestiSound_FrontEnd
 
 <p align="center">
   <a href="https://festisounds.vercel.app/">
@@ -7,7 +6,7 @@
   </a>
 </p>
 
-# Welcome to FestiSounds  🎶
+# # FestiSound_FrontEnd  🎶
 
 FestiSounds is more than just an app. It's a bridge that connects you to the world of undiscovered music, one festival at a time.
 
